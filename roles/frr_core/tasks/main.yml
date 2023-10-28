@@ -18,6 +18,7 @@
 
 - name: Download Official FRR packages to /tmp
   get_url:
+    validate_certs: false
     url: "{{ item }}"
     dest: /tmp/
   loop:
